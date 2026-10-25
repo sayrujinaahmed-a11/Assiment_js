@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assiment</title>
+</head>
+<body>
+    <script>
+        let secretNumber = 7;
+let guess = Number(prompt("Guess a number:"));
+let attempts = 1;
+
+while (guess !== secretNumber) {
+    if (guess > secretNumber) {
+        console.log("Too high! Try again.");
+    } else {
+        console.log("Too low! Try again.");
+    }
+
+    guess = Number(prompt("Guess again:"));
+    attempts++;
+}
+
+console.log("Congrats! Correct number.");
+console.log("You tried " + attempts + " times.");
+    </script>
+</body>
+</html>
